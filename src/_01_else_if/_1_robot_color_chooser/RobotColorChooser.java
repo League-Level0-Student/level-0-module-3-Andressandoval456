@@ -19,6 +19,7 @@ public class RobotColorChooser {
 		while(loop<4) {
 //		bob.move(100);
 //		bob.turn(90);
+		String question;
 			
 		//3. Set the pen width to 10
 		bob.setPenWidth(10);
@@ -28,15 +29,15 @@ public class RobotColorChooser {
 		if ("red" != null) {
 			bob.setPenColor(Color.RED);
 			}
-		if ("blue" != null) {
+		else if ("blue" != null) {
 			bob.setPenColor(Color.blue);
 			}
-		if ("yellow" != null) {
+		else if ("yellow" != null) {
 			bob.setPenColor(Color.yellow);
 		}
         //6. If the user doesn't enter anything, choose a random color
-		if ("" != null) {
-			bob.setPenColor(Color.black);
+		else if ("" != null) {
+			bob.setPenColor(Color.BLACK);
 		}
         //7. Put a loop around your code so that you keep asking the user for more colors & drawing them
 		bob.penDown();
