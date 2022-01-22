@@ -23,15 +23,25 @@ public class HighLowGame {
 			int guess = Integer.parseInt(numguess);
 			// 5. if the guess is correct
 				// 6. Win
-			if(guess = random) {
+			if(guess == random) {
 				JOptionPane.showMessageDialog(null, "You Win");
+				System.exit(0);
 			}
 				// 12. Use "System.exit(0);" to quit the game if the user guessed the right answer.
 			// 7. if the guess is high
-			
+			else if (guess > random) {
+							
 				// 8. Tell them it's too high
+				JOptionPane.showMessageDialog(null, "Its to high");
+				JOptionPane.showMessageDialog(null, "You Lose");
+}
 			// 9. if the guess is low
 				// 10. Tell them it's too low
+			else if (guess < random) {
+				JOptionPane.showMessageDialog(null, "Its to low");
+				JOptionPane.showMessageDialog(null, "You Lose");
+			}
+			
 	}
 		// 13. Tell them they lose
 		
